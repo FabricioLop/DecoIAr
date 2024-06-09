@@ -1,0 +1,503 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #545252;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h1 {
+    margin: 0;
+}
+
+
+.logo{
+    font-size: 24px;
+    color: #fff; 
+}
+
+.logo span{
+    color:#555
+}
+
+
+
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: black; 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.nav ul li a:hover {
+    color: rgb(255, 255, 255); 
+}
+
+.Inicio {
+    text-align: left;
+    padding: 100px 20px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #545252;
+}
+
+.Inicio-content{
+    max-width: 50%;
+}
+
+
+.Inicio h2 {
+    font-size: 4.5em;
+    margin:  10px 100px 20px 0;
+    text-align: left;    
+}
+
+.Inicio p {
+    font-size: 1em;
+    margin: 0 -1 40px 0;
+}
+
+.Inicio p1 {
+    font-size: 0.8em;
+    margin: 0 0 15px 0;
+    color: rgb(51, 50, 50);
+    
+}
+
+
+.Inicio-image img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.Inicio-buttons {
+    display: flex;
+    gap: 50px;
+    margin: 50px;
+}
+
+.btn-prueba, .btn-disenos {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-prueba {
+    background-color: black;
+    color: white;
+}
+
+.btn-prueba:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-disenos {
+    background-color: grey;
+    color: white;
+}
+
+.btn-disenos:hover {
+    background-color: white;
+    color: grey;
+}
+
+.Inicio-image {
+    max-width: 40%;
+    position:absolute;
+    right: 0;
+    top: -29.5%;
+    transform: translateY(36%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 8, 0, 0.1);
+}
+
+.clear {
+    clear: both; 
+}
+
+
+.about-us, .popular-designs, .platforms {
+    padding: 60px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.popular-designs {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f2f2f2;
+}
+
+.popular-designs h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.popular-designs p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.tabs ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tabs ul li {
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+.tabs ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.tabs ul li.active a {
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+}
+
+.designs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.design-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+    max-width: 250px;
+}
+
+.design-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.design-card p {
+    margin: 5px 0;
+}
+
+.design-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.design-card button:hover {
+    background-color: #555;
+}
+
+.load-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.load-more:hover {
+    background-color: #555;
+}
+
+
+
+
+
+.about-us-content, .designs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-us-content div, .design {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0);
+}
+
+.platforms {
+    padding: 60px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 7% 0 0;
+}
+
+.platforms-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.platform-main-image {
+    max-width:max-content; 
+    height: 550px;
+    margin: 0px 75px 0 50px;
+    width: 1000px;
+    margin-right: 20px;
+}
+
+.platforms-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 80px;
+    flex: 1%;
+}
+
+.platform {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(157, 157, 157, 0.1);
+    width: 100%;
+    margin: 5% 0% 0% 7%;
+}
+
+.platform img {
+    max-width: 150px;
+    height: 30%;
+}
+
+.platform-info {
+    text-align: left;
+    flex: 1;
+}
+
+.platform-info h3 {
+    margin: 0;
+}
+
+.platform-info p {
+    margin: 10px 0;
+}
+
+.btn-descargar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-descargar:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.btn-descargar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-descargar:hover {
+    background-color: white;
+    color: black;
+}
+
+.Ejemplos {
+    background-color: #f2f2f2; 
+    padding: 40px 20px; 
+    text-align: center; 
+}
+
+.Ejemplos img {
+    max-width: 45%; 
+    margin: 0 10px; 
+}
+
+.testimonials {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.testimonials-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: 82%; 
+}
+
+.testimonial {
+    flex: 0 0 calc(33.33% - 20px); 
+    box-sizing: border-box; 
+    background-color: #939393; 
+    padding: 20px; 
+    border-radius: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: left; 
+}
+
+.testimonial img {
+    max-width: 60px; 
+    border-radius: 50%; 
+    margin-bottom: 12px; 
+}
+
+.testimonial h3 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.testimonial p {
+    margin: 0; 
+    font-size: 0.9em; 
+}
+
+
+
+
+
+.site-footer {
+    background-color: #828282;
+    padding: 40px 20px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.logo-column {
+    max-width: 300px;
+}
+
+.logo-column h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.logo-column p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 12px;
+}
