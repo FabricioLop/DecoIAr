@@ -52,52 +52,52 @@ body {
 }
 
 .Inicio {
-    text-align: left;
-    padding: 100px 20px;
-    color: rgb(0, 0, 0);
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+    background-color: #797979;
+}
+
+.Inicio-content {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #545252;
+    width: max-content;
+    max-width: 12000px;
 }
 
-.Inicio-content{
-    max-width: 50%;
+.content01 {
+    width: 44%;
+
 }
 
-
-.Inicio h2 {
-    font-size: 4.5em;
-    margin:  10px 100px 20px 0;
-    text-align: left;    
+.content01 .intro {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
 }
 
-.Inicio p {
-    font-size: 1em;
-    margin: 0 -1 40px 0;
+.content01 h2 {
+    font-size: 36px;
+    color: #000000;
+    margin: 20px 0 10px 0;
 }
 
-.Inicio p1 {
-    font-size: 0.8em;
-    margin: 0 0 15px 0;
-    color: rgb(51, 50, 50);
-    
-}
-
-
-.Inicio-image img{
-    max-width: 100%;
-    border-radius: 10px;
+.content01 .desc {
+    font-size: 19px;
+    color: #616060;
+    margin-bottom: 20px;
 }
 
 .Inicio-buttons {
     display: flex;
-    gap: 50px;
-    margin: 50px;
+    gap: 10px;
 }
 
 .btn-prueba, .btn-disenos {
-    padding: 10px 20px;
+    padding: 15px 30px;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -124,15 +124,21 @@ body {
     color: grey;
 }
 
-.Inicio-image {
-    max-width: 40%;
-    position:absolute;
-    right: 0;
-    top: -29.5%;
-    transform: translateY(36%);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 8, 0, 0.1);
+.Inicio-image-content02 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin:  10% 10% 10px 10px auto;
 }
+
+.Inicio-image-content02 .image {
+    width: calc(100% - 10px);  
+    height: calc(100% - 10px); 
+    object-fit: cover;
+    border-radius: 65px;
+}
+
 
 .clear {
     clear: both; 
