@@ -2,15 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 80px;
 }
 
 .header {
     background-color: #545252;
     color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 13px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
 }
 
 .header .logo h1 {
@@ -32,7 +37,7 @@ body {
 
 .nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 40px 0 0;
     padding: 0;
     display: flex;
 }

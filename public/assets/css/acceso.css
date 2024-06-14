@@ -1,0 +1,85 @@
+/* Resetear estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.Inicio-Sesion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.Inicio-Sesion_Image img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.Inicio-Sesion_Titulo {
+    font-size: 24px;
+    color: #5b5e5d;
+    margin-bottom: 10px;
+}
+
+.Inicio-Sesion_Paragraph {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.Inicio-Sesion_Form {
+    width: 100%;
+}
+
+.Inicio-Sesion_Input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.Inicio-Sesion_Input[type="submit"] {
+    background-color: #545252;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Inicio-Sesion_Input[type="submit"]:hover {
+    background-color: #333;
+}
+
+.Inicio-Sesion_Social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Inicio-Sesion_Link {
+    margin: 0 10px;
+}
+
+.Inicio-Sesion_Social_Icon {
+    width: 30px;
+    height: 30px;
+}
