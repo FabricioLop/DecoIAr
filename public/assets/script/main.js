@@ -46,3 +46,4 @@ diseños.addEventListener("click", (d) =>{
     const sectionD = document.querySelector(".popular-designs")
     sectionD.scrollIntoView({behavior : "smooth"})
 })
+
