@@ -51,22 +51,34 @@ body {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #acacac;
+    border-radius: 10px;
     font-size: 14px;
-    color: #333;
+    color: #5f5e5e;
 }
 
-.Inicio-Sesion_Input[type="submit"] {
-    background-color: #545252;
-    color: white;
+
+
+
+.Inicio-Sesion_Button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 3px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: #5e5e5e;
+    text-align: center;
+    text-decoration: none;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(83, 83, 83, 0.1);
     transition: background-color 0.3s ease;
 }
 
-.Inicio-Sesion_Input[type="submit"]:hover {
-    background-color: #333;
+.Inicio-Sesion_Button:hover {
+    background-color: #424242;
 }
 
 .Inicio-Sesion_Social {
